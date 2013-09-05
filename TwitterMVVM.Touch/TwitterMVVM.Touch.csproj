@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{961785D6-135C-4B28-A8A3-E542B2BA083F}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TwitterMVVM.Touch</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>TwitterMVVMTouch</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>true</MtouchDebug>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <ConsolePause>false</ConsolePause>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\Lib\Touch\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Touch">
+      <HintPath>..\Lib\Touch\Cirrious.MvvmCross.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding">
+      <HintPath>..\Lib\Touch\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.Touch">
+      <HintPath>..\Lib\Touch\Cirrious.MvvmCross.Binding.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\Lib\Touch\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\Lib\Touch\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Touch">
+      <HintPath>..\Lib\Touch\Cirrious.CrossCore.Touch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Resources\Mockups\.DS_Store" />
+    <None Include="Resources\Splash\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Views\HomeView.cs" />
+    <Compile Include="Views\TableView.cs" />
+    <Compile Include="Views\InfoView.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\TwitterMVVM.Core\TwitterMVVM.Core.csproj">
+      <Project>{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}</Project>
+      <Name>TwitterMVVM.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Icons\Icon.png" />
+    <BundleResource Include="Resources\Icons\Icon%402x.png" />
+    <BundleResource Include="Resources\Icons\Icon-Small.png" />
+    <BundleResource Include="Resources\Icons\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icons\iTunesArtwork%402x.png" />
+    <BundleResource Include="Resources\Info\button.png" />
+    <BundleResource Include="Resources\Info\button%402x.png" />
+    <BundleResource Include="Resources\Info\button_1p.png" />
+    <BundleResource Include="Resources\Info\button_pressed.png" />
+    <BundleResource Include="Resources\Info\button_pressed%402x.png" />
+    <BundleResource Include="Resources\Info\icon_mail.png" />
+    <BundleResource Include="Resources\Info\icon_mail%402x.png" />
+    <BundleResource Include="Resources\Info\icon_phone.png" />
+    <BundleResource Include="Resources\Info\icon_phone%402x.png" />
+    <BundleResource Include="Resources\Info\logo.png" />
+    <BundleResource Include="Resources\Info\logo%402x.png" />
+    <BundleResource Include="Resources\Main\avatar.png" />
+    <BundleResource Include="Resources\Main\avatar%402x.png" />
+    <BundleResource Include="Resources\Main\avatar_big.png" />
+    <BundleResource Include="Resources\Main\avatar_big%402x.png" />
+    <BundleResource Include="Resources\Main\mask_avatar.png" />
+    <BundleResource Include="Resources\Main\mask_avatar%402x.png" />
+    <BundleResource Include="Resources\Main\mask_avatar_mini.png" />
+    <BundleResource Include="Resources\Main\mask_avatar_mini%402x.png" />
+    <BundleResource Include="Resources\Main\table.png" />
+    <BundleResource Include="Resources\Main\table%402x.png" />
+    <BundleResource Include="Resources\Main\table_pressed.png" />
+    <BundleResource Include="Resources\Main\table_pressed%402x.png" />
+    <BundleResource Include="Resources\Mockups\Info.png" />
+    <BundleResource Include="Resources\Mockups\Main.png" />
+    <BundleResource Include="Resources\Mockups\Splash.png" />
+    <BundleResource Include="Resources\Mockups\Tweets.png" />
+    <BundleResource Include="Resources\Splash\Default-568h%402x.png" />
+    <BundleResource Include="Resources\Splash\splash.png" />
+    <BundleResource Include="Resources\Splash\splash%402x.png" />
+    <BundleResource Include="Resources\TabBar\icon_apple.png" />
+    <BundleResource Include="Resources\TabBar\icon_apple%402x.png" />
+    <BundleResource Include="Resources\TabBar\icon_dribbble.png" />
+    <BundleResource Include="Resources\TabBar\icon_dribbble%402x.png" />
+    <BundleResource Include="Resources\TabBar\icon_github.png" />
+    <BundleResource Include="Resources\TabBar\icon_github%402x.png" />
+    <BundleResource Include="Resources\TabBar\icon_twitter.png" />
+    <BundleResource Include="Resources\TabBar\icon_twitter%402x.png" />
+    <BundleResource Include="Resources\Tweets\bg.png" />
+    <BundleResource Include="Resources\Tweets\bg%402x.png" />
+    <BundleResource Include="Resources\Tweets\line.png" />
+    <BundleResource Include="Resources\Tweets\line%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="Resources\Icons\iTunesArtwork.png" />
+  </ItemGroup>
+</Project>

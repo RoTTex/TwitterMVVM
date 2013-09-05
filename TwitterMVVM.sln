@@ -3,18 +3,54 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterMVVM.Core", "TwitterMVVM.Core\TwitterMVVM.Core.csproj", "{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterMVVM.Touch", "TwitterMVVM.Touch\TwitterMVVM.Touch.csproj", "{961785D6-135C-4B28-A8A3-E542B2BA083F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.AppStore|iPhone.Build.0 = Debug|Any CPU
 		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Release|iPhone.Build.0 = Release|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{13BE8AF2-D44E-4F3F-B3FD-29ECA25B4D2D}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Debug|iPhone.Build.0 = Debug|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Release|iPhone.ActiveCfg = Release|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Release|iPhone.Build.0 = Release|iPhone
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{961785D6-135C-4B28-A8A3-E542B2BA083F}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = TwitterMVVM.Core\TwitterMVVM.Core.csproj
+		StartupItem = TwitterMVVM.Touch\TwitterMVVM.Touch.csproj
 	EndGlobalSection
 EndGlobal
